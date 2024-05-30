@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@200;400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  padding: 30px 20% ;
+  /* display: grid;
+  place-items: center; */
+  font-family: 'Athiti', sans-serif;
+}
+
+.todoapp {
+  /* border: 1px solid silver; */
+  border-radius: 8px;
+  min-width: 400px;
+  max-width: 500px;
+  margin: auto;
+  min-height: 600px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard {
+  background-color: aquamarine;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding-inline: 1rem;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard .paging{
+  position: relative;
+  top: 20px;
+}
+
+.dashboard .paging input {
+  width: 2rem;
+  text-align: center;
+  font-family: 'Athiti', sans-serif;
+}
+.dashboard .paging button {
+  border-color: silver;
+  color: blue;
+  padding-inline: 4px ;
+  font-family: 'Athiti', sans-serif;
+}
+
+.todoapp .btn-add {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: gold;
+  border-radius: 50%;
+  position: absolute;
+  right: 1rem;
+  top: 75px;
+  color: white;
+  font-size: 32px;
+}
+
+.todoform {
+  padding: 25px 16px 16px;
+  display : flex;
+  justify-content: center;
+  background-color: gold;
+}
+
+.todoform > input{
+  flex-grow: 2;
+  font-size: 24px;
+}
+
+.todoform > button{
+  flex-grow: 1;
+}
+
+.job-container {
+  background-color: antiquewhite;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  flex-grow: 1;
+  padding : 2rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.job-item {
+  display: flex;  
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 2px;
+  background-color: lightsalmon;
+  font-size: 18px;
+  padding: 8px 8px;
+}
+
+.job-item .job-title{
+  flex-grow :8;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.job-item a {
+  border: 1px solid gold;
+  cursor: pointer;
+  padding: 2px 4px;
+  
+}
